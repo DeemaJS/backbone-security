@@ -71,7 +71,7 @@ app.post("/session/login", function(req, res){
 				user : user
 			});
 		}
-	};
+	}
 	return res.send(401);
 });
 
@@ -96,7 +96,7 @@ app.get('/users/:id', Auth, function(req, res){
 		if(id == Users[i].id){
 			return res.send(Users[i]);
 		}
-	};
+	}
 	return res.send(400);
 });
 
